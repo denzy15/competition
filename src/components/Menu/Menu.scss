@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.menu {
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    span {
+      color: $accordionBtnColor;
+      font-weight: normal;
+    }
+  }
+  &__btn {
+    button {
+      width: 180px;
+    }
+  }
+}

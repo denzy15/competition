@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+
+.subscribe {
+  padding: 30px;
+  max-width: 1680px;
+  margin: 0 auto;
+  border-radius: 81px;
+  background: url("../../media/images/sub-bg.png") 0 0 / cover no-repeat;
+  &__body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 930px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  &__form {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    input {
+      width: 540px;
+      color: $secondaryTextColor;
+      padding: 18px 20px;
+      border: 1px solid #9fa0a7;
+      border-radius: 15px;
+      background-color: $mainBackgoundColor;
+    }
+    button {
+      width: 360px;
+      background-color: $mainBtnColor;
+    }
+  }
+
+  &__title {
+    color: $mainBackgoundColor;
+  }
+  .privacy {
+    color: #d6d7dd;
+    text-align: left;
+    max-width: 50%;
+    a {
+      color: $mainBackgoundColor;
+    }
+  }
+  &__text {
+    color: white;
+    padding: 0 28%;
+  }
+}

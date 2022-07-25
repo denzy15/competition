@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.benefit {
+  flex: 0 1 31%;
+  padding: 20px 35px 24px;
+  box-shadow: 0px 5px 30px rgba(215, 211, 225, 0.5);
+  border-radius: 16px;
+  background-color: $mainBackgoundColor;
+  &__img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 8px;
+  }
+  &__text {
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: $secondaryTextColor;
+  }
+}

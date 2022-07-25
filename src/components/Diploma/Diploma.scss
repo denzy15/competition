@@ -1,0 +1,28 @@
+.diploma {
+  display: flex;
+  gap: 15.5%;
+  margin-bottom: 200px;
+  background: url('../../media/images/benefits-bg.svg');
+  &__body {
+	flex: 1;
+    .text {
+      margin-bottom: 20px;
+    }
+  }
+  &__title {
+    text-align: left;
+    margin-bottom: 27px;
+    &::before {
+      width: 150px;
+      background: url("../../media/images/underline3.svg") no-repeat;
+      left: 28%;
+      bottom: -5px;
+    }
+  }
+  &__img {
+	flex: 0 1 680px;
+	img{
+		max-width: 100%;
+	}
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.privacy {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  input[type="checkbox"] {
+    width: 24px;
+    accent-color: $mainBtnColor;
+    margin-top: 2px;
+    transform: scale(1.5);
+  }
+  span {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: #9fa0a7;
+  }
+  a {
+    font-size: inherit;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.info {
+  max-width: 51%;
+  margin: 200px auto;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: center;
+  span {
+    color: $mainBtnColor;
+  }
+}

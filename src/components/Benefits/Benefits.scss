@@ -1,0 +1,19 @@
+.benefits {
+  padding: 36px 0px 94px;
+  margin-bottom: 106px;
+  background: url("../../media/images/benefits-bg.svg") 0 0 / cover no-repeat;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__title {
+    margin-bottom: 50px;
+    &::before {
+      width: 105px;
+      bottom: -8px;
+      left: 44.5%;
+      background: url("../../media/images/underline1.svg") no-repeat;
+    }
+  }
+}

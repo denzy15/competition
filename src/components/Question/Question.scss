@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.question {
+  &__body {
+    padding: 43px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $mainTextColor;
+  }
+  &__text {
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: $secondaryTextColor;
+  }
+  &__btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: $accordionBtnColor;
+    color: $mainBackgoundColor;
+    font-size: 30px;
+    
+  }
+}

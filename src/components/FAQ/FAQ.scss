@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.faq{
+	margin-bottom: 200px;
+	&__title{
+		margin-bottom: 50px;
+	}
+	&__items{
+		border-bottom: 1px solid $mainTextColor;
+	}
+}

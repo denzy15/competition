@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.step {
+  position: absolute;
+  display: flex;
+  gap: 40px;
+  &__order {
+    width: 80px;
+    height: 77px;
+    background-color: $accordionBtnColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: $mainBackgoundColor;
+    border-radius: 50%;
+  }
+  &__text {
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: $secondaryTextColor;
+    max-width: 268px;
+    a {
+      color: $mainBtnColor;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.plan {
+  background: url("../../media/images/plan/clouds.svg") center / contain
+    no-repeat;
+	margin-bottom: 220px;
+  &__title {
+    margin-bottom: 84px;
+    &::before {
+      width: 84px;
+      background: url("../../media/images/underline2.svg") no-repeat;
+      right: 39.5%;
+      bottom: -5px;
+    }
+  }
+  &__body {
+    height: 477px;
+    background: url("../../media/images/plan/dotted-line.svg") bottom right /
+      95% no-repeat;
+    position: relative;
+    .step:nth-child(1) {
+      left: 0;
+      top: 0;
+    }
+    .step:nth-child(2) {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .step:nth-child(3) {
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

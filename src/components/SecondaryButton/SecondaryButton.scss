@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+//@import "../../styles/extra-variables";
+
+.second-btn {
+	background: $mainBackgoundColor;
+	border: 1px solid $mainTextColor;
+	border-radius: 15px;
+	padding: 10px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.04em;
+}

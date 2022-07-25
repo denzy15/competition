@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+//@import "../../styles/extra-variables";
+
+.timer {
+  &__body {
+    display: flex;
+    column-gap: 10px;
+    text-align: center;
+    align-items: flex-start;
+    span {
+      margin-top: 15px;
+      font-family: "Nunito";
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 33px;
+    }
+  }
+  &__counter {
+    box-shadow: 0px 5px 30px rgba(215, 211, 225, 0.5);
+    border-radius: 16px;
+    background-color: $mainBackgoundColor;
+    color: $accordionBtnColor;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    width: 70px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__count-name {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    margin-top: 5px;
+    span {
+      font-size: inherit;
+      color: $secondaryTextColor;
+      font-weight: 400;
+    }
+  }
+}
