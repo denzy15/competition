@@ -20,6 +20,12 @@
     background-color: $accordionBtnColor;
     color: $mainBackgoundColor;
     font-size: 30px;
-    
+  }
+  &__answer{
+    color: $secondaryTextColor;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 90%;
+    margin-bottom: 20px;
   }
 }

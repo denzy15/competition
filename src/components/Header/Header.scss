@@ -1,10 +1,10 @@
 @import "../../styles/App";
 .header {
-	padding: 30px 0 90px;
-	background: url('../../media/images/header-bg.png') right top no-repeat;
+  padding: 30px 0 90px;
+  background: url("../../media/images/header-bg.png") right top no-repeat;
   &__body {
-	max-width: 653px;
-	margin-top: 248px;
+    max-width: 653px;
+    margin-top: 248px;
   }
   &__subtitle {
     font-size: 15px;
@@ -20,16 +20,18 @@
     line-height: 122%;
   }
   &__text {
-	margin: 40px 0px 60px 0px;
+    margin: 40px 0px 60px 0px;
   }
   &__participate {
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
-	.btn{
-		width: 300px;
-		background-color: $mainBtnColor;
-		box-shadow: 0px 15px 30px rgba(25, 218, 140, 0.25);
-	}
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .btn {
+      width: 300px;
+      background-color: $mainBtnColor;
+      &:hover {
+        box-shadow: 0px 15px 30px rgba(25, 218, 140, 0.25);
+      }
+    }
   }
 }
