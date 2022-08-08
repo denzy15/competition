@@ -1,0 +1,27 @@
+.up-down {
+  position: absolute;
+  animation: upDown 3s infinite linear alternate;
+}
+
+.down-up{
+	position: absolute;
+	animation: downUp 3s infinite ease-in alternate;
+}
+
+@keyframes upDown {
+  from {
+    transform: translate(0, -10%);
+  }
+  to {
+    transform: translate(0, 10%);
+  }
+}
+
+@keyframes downUp {
+  from {
+    transform: translate(0, 5%);
+  }
+  to {
+    transform: translate(0, -5%);
+  }
+}

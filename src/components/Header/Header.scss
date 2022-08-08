@@ -1,7 +1,8 @@
 @import "../../styles/App";
 .header {
   padding: 30px 0 90px;
-  background: url("../../media/images/header-bg.png") right top no-repeat;
+  background: url('../../media/images/planes.png') 60% 90% no-repeat , url('../../media/images/header/girl.png') 82% 91% no-repeat ,url("../../media/images/header/space-bg.png") right top no-repeat;
+  position: relative;
   &__body {
     max-width: 653px;
     margin-top: 248px;
@@ -35,3 +36,4 @@
     }
   }
 }
+

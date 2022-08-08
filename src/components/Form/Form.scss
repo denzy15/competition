@@ -27,5 +27,8 @@
   button {
     background-color: $secondaryBtnColor;
     width: 290px;
+    &:hover{
+      box-shadow: 0px 15px 30px rgba(218, 71, 25, 0.25);
+    }
   }
 }
