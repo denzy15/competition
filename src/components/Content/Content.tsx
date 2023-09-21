@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Benefits from "../Benefits/Benefits";
 import Diploma from "../Diploma/Diploma";
 import Plan from "../Plan/Plan";
@@ -6,8 +6,20 @@ import FAQ from "../FAQ/FAQ";
 import Registrate from "../Registrate/Registrate";
 import "./Content.scss";
 import Subscribe from "../Subscribe/Subscribe";
+import ChatComponent from "../ChatComponent/ChatComponent";
+import SecondaryButton from "../SecondaryButton/SecondaryButton";
+
+
 
 const Content: React.FC = () => {
+  const [openedChat, setOpenedChat] = useState(false)
+
+
+  function toggleChat() : void {
+   setOpenedChat(prev => !prev) 
+  }
+
+
   return (
     <main className="content">
       <div className="container">
@@ -17,6 +29,8 @@ const Content: React.FC = () => {
           можно победить, есть возможность проявить себя во всех направлениях и
           даже <span>без художественных способностей.</span>
         </section>
+        { openedChat && <ChatComponent /* isOpen={openedChat} toggle={setOpenedChat} *//>}
+        <SecondaryButton isOpened={openedChat} toggle={setOpenedChat}/>
         <Benefits />
         <Plan />
         <Diploma />

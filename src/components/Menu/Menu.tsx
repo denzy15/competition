@@ -12,9 +12,7 @@ const Menu: React.FC = () => {
             Слон<span>УМ</span>
           </div>
         </li>
-        <li className="menu__btn">
-          <SecondaryButton content="Войти" key={1}/>
-        </li>
+        
       </ul>
     </nav>
   );
