@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Benefits from "../Benefits/Benefits";
 import Diploma from "../Diploma/Diploma";
 import Plan from "../Plan/Plan";
@@ -8,17 +8,14 @@ import "./Content.scss";
 import Subscribe from "../Subscribe/Subscribe";
 import ChatComponent from "../ChatComponent/ChatComponent";
 import SecondaryButton from "../SecondaryButton/SecondaryButton";
-
-
+import { DiscussionEmbed } from "disqus-react";
 
 const Content: React.FC = () => {
-  const [openedChat, setOpenedChat] = useState(false)
+  const [openedChat, setOpenedChat] = useState(false);
 
-
-  function toggleChat() : void {
-   setOpenedChat(prev => !prev) 
+  function toggleChat(): void {
+    setOpenedChat((prev) => !prev);
   }
-
 
   return (
     <main className="content">
@@ -29,13 +26,24 @@ const Content: React.FC = () => {
           можно победить, есть возможность проявить себя во всех направлениях и
           даже <span>без художественных способностей.</span>
         </section>
-        { openedChat && <ChatComponent /* isOpen={openedChat} toggle={setOpenedChat} *//>}
-        <SecondaryButton isOpened={openedChat} toggle={setOpenedChat}/>
+        {openedChat && (
+          <ChatComponent /* isOpen={openedChat} toggle={setOpenedChat} */ />
+        )}
+        <SecondaryButton isOpened={openedChat} toggle={setOpenedChat} />
         <Benefits />
         <Plan />
         <Diploma />
         <Registrate />
         <FAQ />
+        <DiscussionEmbed
+          shortname="den-12"
+          config={{
+            url: "https://example.com/my-article-url",
+            identifier: "unique-article-id",
+            title: "disqus-test",
+            language: "ru_Ru", 
+          }}
+        />
       </div>
       <Subscribe />
     </main>
