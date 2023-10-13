@@ -19,7 +19,7 @@ import plus from "../../media/images/header/plus.svg";
 import stars1 from "../../media/images/header/stars-1.svg";
 import stars2 from "../../media/images/header/stars-2.svg";
 import MovingIcon from "../MovingIcon/MovingIcon";
-
+import { useNavigate } from "react-router-dom";
 const iconsState = [
   {
     id: 1,
@@ -114,6 +114,11 @@ const iconsState = [
 ];
 
 const Header: React.FC = () => {
+  const nav = useNavigate();
+
+  const register = () => {
+    nav("/register");
+  };
   return (
     <header className="header">
       {iconsState.map((i) => (
@@ -156,15 +161,13 @@ const Header: React.FC = () => {
         <Menu />
         <section className="header__body">
           <span className="header__subtitle">От компании СлонУМ</span>
-          <h1 className="header__title">
-            Всероссийский конкурс Детского рисунка
-          </h1>
+          <h1 className="header__title">Конкурс Детского рисунка</h1>
           <p className="header__text text">
             Участвуйте в конкурсе и получайте призы в различных номинациях
             детского рисунка для всех возрастов
           </p>
           <div className="header__participate">
-            <Button content="Участвовать" />
+            <Button content="Участвовать" submit={register} />
             <Timer />
           </div>
         </section>

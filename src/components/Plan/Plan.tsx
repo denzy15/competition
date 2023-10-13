@@ -1,6 +1,6 @@
-import React from "react";
+import React, { MutableRefObject } from "react";
 import Step from "../Step/Step";
-import './Plan.scss'
+import "./Plan.scss";
 
 const planState = [
   {
@@ -17,13 +17,15 @@ const planState = [
   },
 ];
 
-const Plan: React.FC = () => {
+const Plan: React.FC<{ ref: MutableRefObject<HTMLDivElement | null> }> = ({
+  ref,
+}) => {
   return (
     <section className="plan">
       <h2 className="plan__title title">Пошаговый план</h2>
       <div className="plan__body">
         {planState.map((p) => (
-          <Step key={p.id} num={p.id} text={p.text} />
+          <Step key={p.id} num={p.id} text={p.text} ref={ref} />
         ))}
       </div>
     </section>

@@ -22,9 +22,10 @@
     letter-spacing: 0.04em;
     color: $secondaryTextColor;
     max-width: 268px;
-    a {
+    span {
       color: $mainBtnColor;
       text-decoration: underline;
+      cursor: pointer;
     }
   }
 }
